@@ -1,37 +1,23 @@
-import React from 'react'
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Experience from './components/experience/Experience'
+import React from "react";
+import Nav from "./components/nav/Nav";
 // import Services from './components/services/Services'
-import Portfolio from './components/portfolio/Portfolio'
-import Testimonials from './components/testimonials/Testimonials'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
-import ClientBar from './components/clientbar/ClientBar'
-import ReadMore from './components/portfolio/ReadMore'
-import { Routes, Route, Navigate } from "react-router-dom";
-
+import { Navigate, Route, Routes } from "react-router-dom";
+import Footer from "./components/footer/Footer";
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
 
 const App = () => {
-
-  return (
-    <>
-        <Header id="header"/>
-        <Nav />
+    return (
+        <>
+            <Nav />
             <Routes>
-                <Route path={"/ReadMore:slug"} element={<ReadMore />} />
+                <Route path="/" element={<HomePage />} />
+                <Route path={"/projects/:slug"} element={<ProjectPage />} />
                 <Route path="*" element={<Navigate to="/" />} />
             </Routes>
-        <ClientBar />
-        <About id="about" />
-        <Portfolio id="portfolio"/>
-        <Experience id="experience"/>
-        <Testimonials id="testimonials"/>
-        <Contact id="contact"/>
-        <Footer />
-    </>
-  )
-}
+            <Footer />
+        </>
+    );
+};
 
-export default App
+export default App;

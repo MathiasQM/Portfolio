@@ -45,7 +45,7 @@ const About = () => {
             </article>
           </div>
 
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi asperiores repudiandae voluptatibus totam voluptate facere soluta sed, quibusdam corrupti inventore maxime minima voluptatum. Consequuntur voluptatem officia eum. Inventore, perferendis. Consequatur!</p>
+          <p>With only 3 years of experience & my education as a Multimediedesigner, have I already managed to start my own company & done professional work for 3 clients. Do you have a project in mind? Hit me up! - I'll buy us a cup of coffee!</p>
         <a href="#contact" className="btn btn-primary">Let's Talk</a>
         </div>
       </div>

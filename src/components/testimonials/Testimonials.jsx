@@ -1,9 +1,8 @@
 import React from 'react'
 import './testimonials.css'
-import Avatar1 from '../../assets/avatar1.jpg'
-import Avatar2 from '../../assets/avatar2.jpg'
-import Avatar3 from '../../assets/avatar3.jpg'
-import Avatar4 from '../../assets/avatar4.jpg'
+import Avatar1 from '../../assets/synkron-logo.png'
+import Avatar2 from '../../assets/Mathilde.png'
+import Avatar3 from '../../assets/Mux-tabicon.webp'
 import { useInView } from 'react-intersection-observer';
 import styles from '../../animations.css'
 
@@ -19,23 +18,18 @@ import 'swiper/css/pagination';
 const data = [
   {
     avatar: Avatar1,
-    name: 'Mathilde Kjær',
-    review: 'Modi alias animi dolorem aliquam ea eum beatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectus voluptatem dolores deserunt explicabo nostrum ducimus quasi?'
+    name: 'Synkron Media',
+    review: 'Vi arbejdede sammen med Mathias, da vi havde brug for et nyt portfolio til vores virksomhed. Mathias gjorde et professionelt stykkearbejde - Vi kunne ikke anbefale ham mere!'
   },
   {
     avatar: Avatar2,
-    name: 'Shatta Wale',
-    review: 'Modi alias animi dolorem aliquam ea eum beatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectus voluptatem dolores deserunt explicabo nostrum ducimus quasi?'
+    name: 'Mathilde Kjær',
+    review: 'Mathias er bare verdens BEDSTE kæreste!'
   },
   {
     avatar: Avatar3,
-    name: 'Kwame Despite',
-    review: 'Modi alias animi dolorem aliquam ea eum beatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectus voluptatem dolores deserunt explicabo nostrum ducimus quasi?'
-  },
-  {
-    avatar: Avatar4,
-    name: 'Nana Ama McBrown',
-    review: 'Modi alias animi dolorem aliquam ea eum beatae maiores, consectetur praesentium quibusdam, commodi velit porro blanditiis consequatur qui molestiae. Dolorem, perspiciatis aspernatur labore distinctio ratione delectus voluptatem dolores deserunt explicabo nostrum ducimus quasi?'
+    name: 'MUX',
+    review: 'Mathias hjalp os med at udvikle en hjemmeside som led i hans eksamen. Mathias afleverede et godt stykke arbejde, som vi forhåbentlig snart kan offentliggøre!'
   },
 ]
 
@@ -59,12 +53,12 @@ const Testimonials = () => {
           data.map(({avatar, name, review}, index) => {
             return(
               <SwiperSlide key={index} className="testimonial">
-              <div className="clients_avatar">
-                <img src={avatar} alt={name} />
-              </div>
-                <h5 className="client_name">{name}</h5>
-                <small className='client_review'>{review}</small>
-            </SwiperSlide>
+                <div className="clients_avatar">
+                  <img src={avatar} alt={name} />
+                </div>
+                  <h5 className="client_name">{name}</h5>
+                  <small className='client_review'>{review}</small>
+              </SwiperSlide>
             )
           })
         }

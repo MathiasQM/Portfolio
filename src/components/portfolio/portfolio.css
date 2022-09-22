@@ -35,7 +35,7 @@
 .container_read_more {
     position: fixed;
     bottom: 0;
-    z-index: 10;
+    z-index: 1;
     width: 100%;
     height: 350px;
     background: var(--color-primary);

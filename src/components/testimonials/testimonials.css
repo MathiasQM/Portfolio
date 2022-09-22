@@ -12,6 +12,15 @@
     border: 0.4rem solid var(--color-primary-variant);
 }
 
+.clients_avatar img{
+    position: relative;
+    top: -1px;
+    left:-1px;
+    background: #fff;
+    border-radius: 100%;
+    width: 100%;
+}
+
 .testimonial {
     background: var(--color-bg-variant);
     text-align: center;
