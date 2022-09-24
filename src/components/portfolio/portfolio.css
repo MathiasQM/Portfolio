@@ -35,10 +35,44 @@
 .container_read_more {
     position: fixed;
     bottom: 0;
-    z-index: 1;
+    z-index: 10;
     width: 100%;
     height: 350px;
     background: var(--color-primary);
+    padding: 50px;
+}
+
+.readmore_container {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    color: var(--color-white);
+}
+
+.readmore_container img {
+    width: 30%;
+    border-radius: 2rem;
+}
+
+.readmore_header_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.readmore_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.readmore_header button {
+    background: var(--color-bg);
+    color: var(--color-white);
+}
+
+.readmore_info {
+    color: var(--color-white);
 }
 
 

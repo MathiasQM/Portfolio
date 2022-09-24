@@ -1,8 +1,8 @@
 import React from 'react'
 import './clientbar.css'
-import synkronlogo from '../../assets/synkron-logo.png'
+import synkronlogo from '../../assets/synkron-logo.webp'
 import muxlogo  from '../../assets/MUX-logo2.svg'
-import nlmlogo  from '../../assets/NLMlogo.png'
+import nlmlogo  from '../../assets/NLMlogo.webp'
 
 const ClientBar = () => {
   return (

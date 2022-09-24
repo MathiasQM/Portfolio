@@ -1,7 +1,7 @@
 import React from 'react'
 import './header.css'
 import Cta from './Cta'
-import ME from '../../assets/me.png'
+import ME from '../../assets/me.webp'
 import HeaderSocials from './HeaderSocials'
 import { useInView } from 'react-intersection-observer';
 import styles from '../../animations.css'

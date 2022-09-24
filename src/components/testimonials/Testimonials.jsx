@@ -1,7 +1,6 @@
 import React from 'react'
 import './testimonials.css'
-import Avatar1 from '../../assets/synkron-logo.png'
-import Avatar2 from '../../assets/Mathilde.png'
+import Avatar1 from '../../assets/synkron-logo.webp'
 import Avatar3 from '../../assets/Mux-tabicon.webp'
 import { useInView } from 'react-intersection-observer';
 import styles from '../../animations.css'
@@ -20,11 +19,6 @@ const data = [
     avatar: Avatar1,
     name: 'Synkron Media',
     review: 'Vi arbejdede sammen med Mathias, da vi havde brug for et nyt portfolio til vores virksomhed. Mathias gjorde et professionelt stykkearbejde - Vi kunne ikke anbefale ham mere!'
-  },
-  {
-    avatar: Avatar2,
-    name: 'Mathilde Kjær',
-    review: 'Mathias er bare verdens BEDSTE kæreste!'
   },
   {
     avatar: Avatar3,

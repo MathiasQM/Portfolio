@@ -14,7 +14,7 @@ const Portfolio = ({ post }) => {
     
     useEffect(() => {
         async function getData() {
-            const response = await fetch("http://react-api.mathiasqm.dk/wp-json/wp/v2/posts?_embed&v=9999");
+            const response = await fetch("https://react-api.mathiasqm.dk/wp-json/wp/v2/posts?_embed&v=99999");
             const data = await response.json();
                         console.log(data);
             setPosts(data);

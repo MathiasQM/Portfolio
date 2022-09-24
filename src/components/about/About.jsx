@@ -1,6 +1,6 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.png'
+import ME from '../../assets/me-about.webp'
 import {BiBookBookmark} from 'react-icons/bi'
 import {FaUsers} from 'react-icons/fa'
 import {BiMedal} from 'react-icons/bi'
